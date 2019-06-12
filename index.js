@@ -1,5 +1,3 @@
-const stringify = require('json-stringify-safe');
-
 /**
  * Chunk array of objects by their size when stringified into JSON
  * @param {Object[]} input Array of objects to chunk
@@ -43,7 +41,7 @@ module.exports.chunkArray = function({input, bytesSize = Number.MAX_SAFE_INTEGER
 
 function getObjectSize(obj) {
   try {
-    const str = stringify(obj);
+    const str = JSON.stringify(obj);
     return Buffer.byteLength(str, 'utf8');
   } catch (error) {
     return 0;

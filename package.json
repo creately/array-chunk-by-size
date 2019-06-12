@@ -1,6 +1,6 @@
 {
-  "name": "array-chunk-by-size",
-  "version": "2.0.0",
+  "name": "@creately/array-chunk-by-size",
+  "version": "1.0.0",
   "main": "index.js",
   "description": "Chunk array of objects by their size in JSON",
   "engines": {
@@ -28,8 +28,5 @@
   },
   "devDependencies": {
     "jest": "24.8.0"
-  },
-  "dependencies": {
-    "json-stringify-safe": "^5.0.1"
   }
 }
